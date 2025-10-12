@@ -241,6 +241,10 @@ namespace _06_KararYapilari
 
             #endregion
 
+            #region SWITCH CASE
+
+            #endregion
+
         }
     }
 }

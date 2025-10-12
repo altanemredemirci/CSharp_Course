@@ -242,7 +242,7 @@ namespace _06_KararYapilari
             #endregion
 
             #region SWITCH CASE
-
+            //Switch Case yapısı birden fazla koşulun olduğu durumlarda kullanılır.
             #endregion
 
         }

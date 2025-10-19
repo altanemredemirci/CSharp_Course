@@ -1,4 +1,6 @@
-﻿namespace _08_Döngüler
+﻿using System.Runtime.CompilerServices;
+
+namespace _08_Döngüler
 {
     internal class Program
     {
@@ -350,6 +352,20 @@
              
              */
 
+            //for (int i = 0; i < 8; i++) 
+            //{ 
+            //    if(i==0 || i == 7)
+            //    {
+            //        Console.WriteLine("***************");
+            //    }
+            //    else
+            //    {
+            //        Console.WriteLine("*             *");
+            //    }
+            //}
+
+
+
             #endregion
 
             #region YILBAŞI AĞACI
@@ -360,7 +376,26 @@
              *******
             *********
            ***********
+            
+
+            int bosluk = 10;
+            for (int i = 1; i < 10; i+=2)
+            {
+                for (int k = 0; k < bosluk; k++)
+                {
+                    Console.Write(" ");
+                }
+
+                for (int j = 0; j < i; j++)
+                {
+                    Console.Write("*");
+                }
+                bosluk--;
+                Console.WriteLine();
+            }
+
              */
+
             #endregion
 
 
@@ -375,6 +410,26 @@
                 *
 
           */
+
+            //int bosluk = 0;
+            //for (int i = 11; i >0; i -= 2)
+            //{
+            //    for (int k = 0; k <bosluk; k++)
+            //    {
+            //        Console.Write(" ");
+            //    }
+
+            //    for (int j = 0; j < i; j++)
+            //    {
+            //        Console.Write("*");
+            //    }
+            //    bosluk++;
+            //    Console.WriteLine();
+            //}
+
+
+
+
             #endregion
 
             #region Çarpım Tablosu
@@ -384,6 +439,18 @@
              1x2=2  2x2=4
              1x3=3  2x3=6 
              */
+
+            //for (int i = 1; i < 10; i++)
+            //{
+            //    for (int j = 1; j < 10; j++)
+            //    {
+            //        //Console.Write($"{j}x{i}={j*i}\t");
+            //        Console.Write(j+"x"+i+"="+j*i+"\t");
+            //    }
+            //    Console.WriteLine();
+            //}
+
+
 
             #endregion
 
@@ -433,8 +500,149 @@
             #endregion
 
             #region 1 ile 1000000 arasındaki asal sayıları ekrana yazdıran döngü.
+
+            //for (int sayi = 1; sayi < 1000000; sayi++)
+            //{
+
+            //    if (sayi < 2)
+            //    {
+            //        continue;
+            //    }
+
+            //    else if (sayi == 2)
+            //    {
+            //        Console.WriteLine(sayi);
+            //    }
+            //    else
+            //    {
+            //        bool asalMi = true;
+            //        for (int i = 2; i < sayi; i++)
+            //        {
+            //            if (sayi % i == 0)
+            //            {
+            //                asalMi = false;
+            //                break;
+            //            }
+            //        }
+
+            //        if (asalMi)
+            //        {
+            //            Console.WriteLine(sayi);
+            //        }
+
+            //    }
+            //}
+
+
+
             #endregion
             #endregion
+
+
+            #region DO WHILE LOOP
+
+            //int i = 1;
+
+            //while (i < 10)
+            //{
+            //    Console.WriteLine(i);
+            //    i++;
+            //}
+
+            //Kullanıcı 0 girene kadar girilen sayıları topla
+
+            //int toplam = 0;
+            //int sayi;
+            //do
+            //{
+            //    Console.WriteLine("Sayı:");
+            //    sayi = Convert.ToInt32(Console.ReadLine());
+            //    toplam = toplam + sayi;
+            //} while (sayi!=0);
+
+            //Console.WriteLine("Toplam:"+toplam);
+
+
+            //int toplam = 0;
+
+            //while (true)
+            //{
+            //    Console.WriteLine("Sayı:");
+            //    int sayi = Convert.ToInt32(Console.ReadLine());
+
+            //    if (sayi == 0)
+            //    {
+            //        break;
+            //    }
+            //    toplam += sayi;
+            //}
+            #endregion
+
+
+            #region RANDOM
+
+            //Random r = new Random();
+
+            ///Console.WriteLine(r.Next());
+            //Console.WriteLine(r.Next(100));
+
+            //while (true)
+            //{
+            //    Console.WriteLine(r.Next(1, 5));
+            //    Thread.Sleep(1000);
+            //}
+
+            //int rastgele = r.Next(1, 100);
+
+            #region 1-20 arasında rastgele pc tarafın oluşturulan bir sayıyı kullanıcıya 5 hak vererek tahmin etmesini isteyiniz.
+            
+            Random r = new Random();
+            int rastgele = r.Next(1, 21);
+
+            int hak = 5;
+
+            for (int i = 0; i < hak; i++)
+            {
+                Console.WriteLine("Tahmininiz:");
+                int tahmin = Convert.ToInt32(Console.ReadLine());
+
+                if (tahmin == rastgele)
+                {
+                    Console.WriteLine("Tebrikler");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Tekrar Deneyiniz");
+                }
+            }
+
+
+            while (hak > 0)
+            {
+                Console.WriteLine("Tahmininiz:");
+                int tahmin = Convert.ToInt32(Console.ReadLine());
+
+                if (tahmin == rastgele)
+                {
+                    Console.WriteLine("Tebrikler");
+                    break;
+                }
+                else
+                {
+                    Console.WriteLine("Tekrar Deneyiniz");
+                    hak--;
+                }
+            }
+
+
+
+
+
+            #endregion
+            #endregion
+
+
         }
     }
 }

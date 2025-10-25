@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "08_Döngüler", "08_Döngü
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Array", "09_Array\09_Array.csproj", "{AC1577A7-F7F3-48FC-BA5C-4CBFD448B0F0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Otomat", "10_Otomat\10_Otomat.csproj", "{2529A926-BBDE-4905-B375-43AD81CDCAAD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -63,6 +65,10 @@ Global
 		{AC1577A7-F7F3-48FC-BA5C-4CBFD448B0F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC1577A7-F7F3-48FC-BA5C-4CBFD448B0F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC1577A7-F7F3-48FC-BA5C-4CBFD448B0F0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2529A926-BBDE-4905-B375-43AD81CDCAAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2529A926-BBDE-4905-B375-43AD81CDCAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2529A926-BBDE-4905-B375-43AD81CDCAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2529A926-BBDE-4905-B375-43AD81CDCAAD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

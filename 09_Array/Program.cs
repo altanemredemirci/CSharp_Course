@@ -62,7 +62,7 @@
             //}
             #endregion
 
-            #region Kullanıcıya kaç personeli olduğunu sorunuz. Verilen cevapdan sonra her personelin adını sorup bir diziye ekleyiniz. Dizi tamamlandığında personel isimlerini ekrana yazdırınız.
+          #region Kullanıcıya kaç personeli olduğunu sorunuz. Verilen cevapdan sonra her personelin adını sorup bir diziye ekleyiniz. Dizi tamamlandığında personel isimlerini ekrana yazdırınız.
 
             //Console.WriteLine("Kaç personeliniz var?");
             //int personelSayisi = Convert.ToInt32(Console.ReadLine());
@@ -182,6 +182,10 @@
             #endregion
             #endregion
 
+
+            #region MyRegion
+
+            #endregion
         }
     }
 }

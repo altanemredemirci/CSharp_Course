@@ -62,7 +62,7 @@
             //}
             #endregion
 
-          #region Kullanıcıya kaç personeli olduğunu sorunuz. Verilen cevapdan sonra her personelin adını sorup bir diziye ekleyiniz. Dizi tamamlandığında personel isimlerini ekrana yazdırınız.
+            #region Kullanıcıya kaç personeli olduğunu sorunuz. Verilen cevapdan sonra her personelin adını sorup bir diziye ekleyiniz. Dizi tamamlandığında personel isimlerini ekrana yazdırınız.
 
             //Console.WriteLine("Kaç personeliniz var?");
             //int personelSayisi = Convert.ToInt32(Console.ReadLine());
@@ -166,26 +166,78 @@
             #region Resize()
             //Dizinin boyutunu(kapasite) yeniden biçimlendirmeye yarar.
 
-            int[] sayilar = new int[3];
+            //int[] sayilar = new int[3];
 
-            sayilar[0] = 11;
-            sayilar[1] = 12;
-            sayilar[2] = 13;
+            //sayilar[0] = 11;
+            //sayilar[1] = 12;
+            //sayilar[2] = 13;
 
-            Array.Resize(ref sayilar, 4);
-            sayilar[3] = 14;
+            //Array.Resize(ref sayilar, 4);
+            //sayilar[3] = 14;
 
+            //foreach (int item in sayilar)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+            #endregion
+
+            #region İSTANBUL kelimesinin harflerini alt alta ekrana yazdırınız.
+
+            //string sehir = "İSTANBUL";
+
+            //for (int i = 0; i < sehir.Length; i++)
+            //{
+            //    Console.WriteLine(sehir[i]);
+            //}
+
+
+            #endregion
+
+            #region Bir dizinin eleman sayısı 10 ile 20 arasında olacak şekilde sistem tarafında otomatik atılmaktadır.
+            //Bu dizinin elemanlarını da sistem 0,100 arasında otomatik atmaktadır.
+            //Otomatik oluşturulan bu dizinin eleman sayısını ve elemanlarını kullanıcıya gösteriniz
+            //Aynı sayılar tekrar atanmayacak
+            //Dizideki en büyük ve en küçük sayılar sort() kullanılmadan bulup ekrana yazdırılacak 
+            #endregion
+
+            Random r = new Random();
+
+            int uzunluk = r.Next(10, 20);
+
+            int[] sayilar = new int[uzunluk]; //10
+
+            int i = 0;
+            while (i < uzunluk) 
+            { 
+                int sayi= r.Next(0, 100);
+
+                if (sayilar.Contains(sayi)==false)
+                {
+                    sayilar[i] = sayi;
+                    i++;
+                }
+               
+            }
+
+            int enKucuk = sayilar[0];
+            int enBuyuk = sayilar[0];
             foreach (int item in sayilar)
             {
+                if (item > enBuyuk)
+                {
+                    enBuyuk = item;
+                }
+                if (item < enKucuk)
+                {
+                    enKucuk = item;
+                }
+
                 Console.WriteLine(item);
             }
-            #endregion
-            #endregion
 
-
-            #region MyRegion
-
-            #endregion
+            Console.WriteLine("En Küçük:"+enKucuk);
+            Console.WriteLine("En Büyük:"+enBuyuk);
         }
     }
 }

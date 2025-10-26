@@ -166,19 +166,19 @@
             #region Resize()
             //Dizinin boyutunu(kapasite) yeniden biçimlendirmeye yarar.
 
-            //int[] sayilar = new int[3];
+            int[] sayilar = new int[3];
 
-            //sayilar[0] = 11;
-            //sayilar[1] = 12;
-            //sayilar[2] = 13;
+            sayilar[0] = 11;
+            sayilar[1] = 12;
+            sayilar[2] = 13;
 
-            //Array.Resize(ref sayilar, 4);
-            //sayilar[3] = 14;
+            Array.Resize(ref sayilar, 4);
+            sayilar[3] = 14;
 
-            //foreach (int item in sayilar)
-            //{
-            //    Console.WriteLine(item);
-            //}
+            foreach (int item in sayilar)
+            {
+                Console.WriteLine(item);
+            }
             #endregion
             #endregion
 

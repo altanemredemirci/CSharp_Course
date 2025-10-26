@@ -23,6 +23,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "09_Array", "09_Array\09_Arr
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "10_Otomat", "10_Otomat\10_Otomat.csproj", "{2529A926-BBDE-4905-B375-43AD81CDCAAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "11_ArrayList", "11_ArrayList\11_ArrayList.csproj", "{01200BA8-79AC-4A5B-9666-A5743B26C2B5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "12_Methods", "12_Methods\12_Methods.csproj", "{52B8344E-5458-4860-8F96-E996245E929A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -69,6 +73,14 @@ Global
 		{2529A926-BBDE-4905-B375-43AD81CDCAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2529A926-BBDE-4905-B375-43AD81CDCAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2529A926-BBDE-4905-B375-43AD81CDCAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01200BA8-79AC-4A5B-9666-A5743B26C2B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01200BA8-79AC-4A5B-9666-A5743B26C2B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01200BA8-79AC-4A5B-9666-A5743B26C2B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01200BA8-79AC-4A5B-9666-A5743B26C2B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52B8344E-5458-4860-8F96-E996245E929A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52B8344E-5458-4860-8F96-E996245E929A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52B8344E-5458-4860-8F96-E996245E929A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52B8344E-5458-4860-8F96-E996245E929A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

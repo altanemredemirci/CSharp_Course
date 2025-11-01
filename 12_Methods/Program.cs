@@ -56,65 +56,207 @@ namespace _12_Methods
 
             //Toplama();
 
+            //Console.WriteLine("1.Sayı:");
+            //int sayi1 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine("2.Sayı:");
+            //int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+
+            //** Tanımlanırken metoda verilen parametrelere çağırırken dikkat edilmelidir. Eğer 2 int parametre tanımlandıysa, mutlaka metot kullanılırken bu int tipinde 2 adet değer gönderilmelidir.
+            //** Parametre isimlerine uymak zorunlu değildir. Önemli olan veri tipi ve paremetre sayısının aynı olmasıdır.
+
+            //Toplama2(sayi1, sayi2);
+
+
+
             //Kullanıcıdan 2 sayı bir işlem alan ve alınan sayılara işlemi uygulayarak ekrana gösteren metodu yazınız
 
-            DortIslem();
+            //DortIslem();
 
 
+
+            //Kullanıcıdan alınacak 2 üründen pahalı olana %30 indirim uygulayan metot
+
+            //Indirim();
 
 
             #endregion
+
+            #region DATA ACCESS MODIFIER - Erişim Belirteci
+            /*
+             public: Tanımlı yapının bütün SOLUTION altında erişilebilir olduğunu tanımlar.
+             internal: Tanımlı yapının kendi PROJECT altında erişilebilir olduğunu tanımlar.
+             private: Tanımlı yapının sadece kendi CLASS altında erişilebilir olduğunu tanımlar.
+             */
+
+            //Static Metot Çağırma
+            //Matematik.Toplama();
+
+
+            //Nonstatic Metot Çağırma
+            //Matematik matematik = new Matematik(); //Instance(Örneklem)
+            //matematik.Cikarma();
+
+
+            #endregion
+
+            #region DEĞER DÖNDÜREN METOTLAR
+
+            // // void-değer döndürmeyen metotların aksine bu metotlar return keyword ile bize metodun işlem sonucu geri getirir. Yani metot çağrıldığı yere geri döndüğünde data getirir. Bunun amacı metot sonucunun programın akışında başka bir satırda kullanılmasını sağlamaktır.
+
+            //int sonuc = Toplama();
+
+            #region SORU1: kullanıcıdan alınacak 2 ürün fiyatından pahalı olana %30 indirim uygulayan metot ve 3.ürün almak isterse 3.ürüne %50 indirim uygulayarak metot ile kodlayınız
+
+            //Indirim2();
+
+            #endregion
+
         }
 
-        //*** METOT TANIMLAMA ***
-        static void Toplama()
+        #region*** METOT TANIMLAMA ***
+        //static void Toplama()
+        //{
+        //    Console.WriteLine("1.Sayı:");
+        //    int sayi1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("2.Sayı:");
+        //    int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("Toplam:" + (sayi1 + sayi2));
+
+        //}
+
+
+        ////Değer Döndürmeyen Parametreli Metot
+        //static void Toplama2(int s1,int s2)
+        //{
+        //    Console.WriteLine("Toplam:"+(s1+s2));
+        //}
+
+
+        ////Değer Döndürmeyen Parametresiz Metot
+        //static void DortIslem()
+        //{
+        //    Console.WriteLine("1.Sayı:");
+        //    int sayi1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("2.Sayı:");
+        //    int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("İşlem Seçiminiz(+,-,*,/):");
+        //    string islem = Console.ReadLine();
+
+        //    if (islem == "+")
+        //    {
+        //        Console.WriteLine(sayi1 + sayi2);
+        //    }
+        //    else if (islem == "-")
+        //    {
+        //        Console.WriteLine(sayi1 - sayi2);
+        //    }
+        //    else if (islem == "*")
+        //    {
+        //        Console.WriteLine(sayi1 * sayi2);
+        //    }
+        //    else if (islem == "/")
+        //    {
+        //        if (sayi2 > sayi1)
+        //        {
+        //            Console.WriteLine(sayi2 / sayi1);
+        //        }
+        //        else
+        //        {
+        //            Console.WriteLine(sayi1 / sayi2);
+        //        }
+
+        //    }
+        //    else
+        //    {
+        //        Console.WriteLine("");
+        //    }
+        //}
+
+        //static void Indirim()
+        //{
+        //    Console.WriteLine("1.Ürün Fiyatı:");
+        //    double f1 = Convert.ToDouble(Console.ReadLine());
+        //    Console.WriteLine("2.Ürün Fiyatı:");
+        //    double f2 = Convert.ToDouble(Console.ReadLine());
+
+        //    if (f1 > f2)
+        //    {
+        //        f1 = f1 * 0.7;
+        //    }
+        //    else
+        //    {
+        //        f2 = f2 * 0.7;
+        //    }
+
+        //    Console.WriteLine("Toplam Ödeme:"+(f1+f2));
+        //}
+        #endregion
+
+        #region DEĞER DÖNDÜREN METOT TANIMLAMA
+
+        static int Toplama()
         {
             Console.WriteLine("1.Sayı:");
             int sayi1 = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("2.Sayı:");
             int sayi2 = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine("Toplam:" + (sayi1 + sayi2));
+            return sayi1 + sayi2;
 
         }
-        static void DortIslem()
+
+
+        static void Indirim2()
         {
-            Console.WriteLine("1.Sayı:");
-            int sayi1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("2.Sayı:");
-            int sayi2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("1.Ürün Fiyatı:");
+            double f1 = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("2.Ürün Fiyatı:");
+            double f2 = Convert.ToDouble(Console.ReadLine());
 
-            Console.WriteLine("İşlem Seçiminiz(+,-,*,/):");
-            string islem = Console.ReadLine();
+            Console.WriteLine("3.Ürün ister misiniz?(E/H)");
+            string cevap = Console.ReadLine().ToUpper();
 
-            if (islem == "+")
+            if (cevap == "H")
             {
-                Console.WriteLine(sayi1 + sayi2);
-            }
-            else if (islem == "-")
-            {
-                Console.WriteLine(sayi1 - sayi2);
-            }
-            else if (islem == "*")
-            {
-                Console.WriteLine(sayi1 * sayi2);
-            }
-            else if (islem == "/")
-            {
-                if (sayi2 > sayi1)
+                if (f1 > f2)
                 {
-                    Console.WriteLine(sayi2 / sayi1);
+                    f1 = f1 * 0.7;
                 }
                 else
                 {
-                    Console.WriteLine(sayi1 / sayi2);
+                    f2 = f2 * 0.7;
                 }
-                    
+                Console.WriteLine("Ödeme:"+(f1+f2));
             }
             else
             {
-                Console.WriteLine("");
+                if (f1 > f2)
+                {
+                    f1 = f1 * 0.7;
+                }
+                else
+                {
+                    f2 = f2 * 0.7;
+                }
+
+                double f3 = Indirim3();
+                Console.WriteLine("Ödeme:" + (f1 + f2 + f3));
             }
         }
+
+        static double Indirim3()
+        {
+            Console.WriteLine("3.Ürün Fiyatı:");
+            double f3 = Convert.ToDouble(Console.ReadLine());
+
+            return f3 / 2;
+        }
+
+
+        #endregion
+        #endregion
     }
 }

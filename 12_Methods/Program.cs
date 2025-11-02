@@ -112,6 +112,129 @@ namespace _12_Methods
 
             #endregion
 
+            #region SORU2: Kullanıcıdan alınan aralıkta, kullanıcının istediği kadar rastgele sayı ile diziyi dolduran değer döndüren metot
+
+            //int[] dizi = Doldur();
+
+            //foreach (int item in dizi)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+
+
+
+            #endregion
+            #region SORU3:Rastgele 1-100 arasında 15 değer tutan bir dizideki tek ve çiftleri ayrı ayrı dizilere atayan metot 
+
+            //int[] sayilar = new int[15];
+
+            //DiziDoldur(sayilar);
+
+            //int[] teksayilar = new int[0];
+            //int[] ciftsayilar = new int[0];
+
+            //TekCiftKontrol(sayilar, teksayilar, ciftsayilar);
+
+
+
+            #endregion
+            #endregion
+
+            #region OVERLOAD METOT
+            //Overload metot(aşırı yüklenmiş) Aynı isimde farklı şekilde çalışan metotlara overload metot denir. Metotlar aynı isimde olmaları sebebiyle overload olmaları için metot imzaları farklı olmalıdır.
+            //Metot imzası:Parametre sayısı veya parametrenin veri tipi metot imzasını belirler.
+
+            //Toplama();
+
+            //Toplama(11, 12);
+
+
+
+            #endregion
+
+            #region DEFAULT DEĞER
+            // Parametreye default değer tanımlayarak, değer gönderilmem durumunda alacağı değeri vermiş olduk.
+            //Toplama(12, 1);
+
+            //Toplama(3);
+
+            #endregion
+
+            #region PARAMS,OUT,REF
+            #region PARAMS
+            //Params anahtar kelimesi, bir methoda değişken argümanın aynı tipte geçirilmesine olanak tanır.
+            //params parametresi, metodun son parametresi olarak tanımlanmalıdır ve yalnızca bir params anahtar kelimesi kullanılabilir.
+            //params ile belirtilen parametre bir dizi olarak işlenir, bu da metod içinde bir dizi erişilebileceği ve üzerinde işlem yapılabileceği anlamına gelir.
+
+            //int[] rakams = { 1, 2, 3 };
+            //int[] rakams2 = { 1, 2, 3, 4 };
+            //int[] rakams3 = { 1, 2, 3, 4, 5 };
+
+            //DiziYazdir(rakams);
+            //DiziYazdir(rakams2);
+            //DiziYazdir(rakams3);
+
+            //DiziYazdir2(1, 2, 3, 4,5,6);
+
+            //DiziYazdir3("Altan Emre", 1, 3, 4);
+
+
+            #endregion
+
+            #region OUT
+            //parametre olarak gönderilen değişkenin metot içinde manipüle olmasını sağlar. Bu sayede metot dışarıdan(out) gelen değeri değiştirebilir.
+            // ** out kullanılacak değişkene ilk tanımlama da değer atanması zorunlu değildir ama out kullanıldıysa metot içerisinde mutlaka değer atanmalıdır.
+
+
+            //Console.WriteLine("1.Sayı:");
+            //string s = Console.ReadLine(); // "15"
+            //int sayi;
+
+            //if (int.TryParse(s, out sayi))
+            //{
+            //    Console.WriteLine(sayi);
+            //}
+            //else
+            //{
+
+            //}
+
+
+
+
+            //Console.WriteLine("1.Sayı:");
+            //string s = Console.ReadLine();
+            //int sayi;
+            //if (TryPars(s, out sayi)) // //parametre olarak gönderilen değişkenin işlem sonucunda değişmesi için out veya ref keywordleri kullanılmalıdır.
+            //{
+            //}
+
+
+            #endregion
+
+            #region REF
+            //Out dan farklı olarak ref değerin mutlaka başlangıç değeri olmalıdır.
+            //Console.WriteLine("1.Sayı:");
+            //string s = Console.ReadLine();
+            //int sayi=5;
+
+            //TryPars(s, ref sayi); //parametre olarak gönderilen değişkenin işlem sonucunda değişmesi için out veya ref keywordleri kullanılmalıdır.
+            //Console.WriteLine("SAYİ:" + sayi);
+
+            #endregion
+            #endregion
+
+            #region //klavyeden girilen değerler arasında rastgele sayı üreten  ve bu değerleri 10 elemanlı bir diziye atayan SayiUret() isimli bir metot yazın.
+            //Bu dizinin elemanlarını yazan DiziYazdır() isimli bir metot daha yazarak elemanları listeleyin.
+            //Daha sonra bu dizi içerisinde EnBuyukDeger() adında bir metot ile dizinin en büyük değerini bulan,
+            //en küçük değerinin bulan EnKucukDeger() adından başka bir metot daha yazınız.
+            //EnBuyukDeger ve EnKucukDeger metotlarında dönen değerleri ekranda gösteren programı yazınız
+            //kullanıcının bütün hataları kontrol altına alınmalı
+
+            #endregion
+
+
         }
 
         #region*** METOT TANIMLAMA ***
@@ -197,66 +320,234 @@ namespace _12_Methods
 
         #region DEĞER DÖNDÜREN METOT TANIMLAMA
 
-        static int Toplama()
+        //static int Toplama()
+        //{
+        //    Console.WriteLine("1.Sayı:");
+        //    int sayi1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("2.Sayı:");
+        //    int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+        //    return sayi1 + sayi2;
+
+        //}
+
+
+        //static void Indirim2()
+        //{
+        //    Console.WriteLine("1.Ürün Fiyatı:");
+        //    double f1 = Convert.ToDouble(Console.ReadLine());
+        //    Console.WriteLine("2.Ürün Fiyatı:");
+        //    double f2 = Convert.ToDouble(Console.ReadLine());
+
+        //    Console.WriteLine("3.Ürün ister misiniz?(E/H)");
+        //    string cevap = Console.ReadLine().ToUpper();
+
+        //    if (cevap == "H")
+        //    {
+        //        if (f1 > f2)
+        //        {
+        //            f1 = f1 * 0.7;
+        //        }
+        //        else
+        //        {
+        //            f2 = f2 * 0.7;
+        //        }
+        //        Console.WriteLine("Ödeme:"+(f1+f2));
+        //    }
+        //    else
+        //    {
+        //        if (f1 > f2)
+        //        {
+        //            f1 = f1 * 0.7;
+        //        }
+        //        else
+        //        {
+        //            f2 = f2 * 0.7;
+        //        }
+
+        //        double f3 = Indirim3();
+        //        Console.WriteLine("Ödeme:" + (f1 + f2 + f3));
+        //    }
+        //}
+
+        //static double Indirim3()
+        //{
+        //    Console.WriteLine("3.Ürün Fiyatı:");
+        //    double f3 = Convert.ToDouble(Console.ReadLine());
+
+        //    return f3 / 2;
+        //}
+
+
+        //static int[] Doldur()
+        //{
+        //    Console.WriteLine("Başlangıç Değeri:");
+        //    int basla = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("Bitiş Değeri:");
+        //    int bitis = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("Kaç Adet Sayı:");
+        //    int adet = Convert.ToInt32(Console.ReadLine());
+
+        //    int[] sayilar = new int[adet];
+
+        //    Random rnd = new Random();
+
+        //    for (int i = 0; i < adet; i++)
+        //    {
+        //        sayilar[i] = rnd.Next(basla, bitis);
+        //    }
+
+        //    return sayilar;
+        //}
+
+
+        //static int[] DiziDoldur(int[] dizi)
+        //{
+        //    Random r = new Random();
+        //    for (int i = 0; i < 15; i++)
+        //    {
+        //        dizi[i] = r.Next(1, 100);
+        //    }
+
+        //    return dizi;
+        //}
+
+        //static void TekCiftKontrol(int[] dizi, int[]tdizi, int[] cdizi)
+        //{
+        //    foreach (int sayi in dizi)
+        //    {
+        //        if (sayi % 2 == 0)
+        //        {
+        //            Array.Resize(ref cdizi, cdizi.Length + 1);
+        //            cdizi[^1] = sayi;
+        //            //cdizi[cdizi.Length - 1] = sayi;
+        //        }
+        //        else if (sayi % 2 != 0)
+        //        {
+        //            Array.Resize(ref tdizi, tdizi.Length + 1);
+        //            tdizi[^1] = sayi;
+        //        }
+        //    }
+
+        //    DiziYaz(tdizi);
+        //    Console.WriteLine("**********");
+        //    DiziYaz(cdizi);
+        //}
+
+        //static void DiziYaz(int[] dizi)
+        //{
+        //    foreach (int item in dizi)
+        //    {
+        //        Console.WriteLine(item);
+        //    }
+        //}
+
+        #endregion
+
+        #region OVERLOAD METOT
+        //static void Toplama()
+        //{
+        //    Console.WriteLine("1.Sayı:");
+        //    int sayi1 = Convert.ToInt32(Console.ReadLine());
+        //    Console.WriteLine("2.Sayı:");
+        //    int sayi2 = Convert.ToInt32(Console.ReadLine());
+
+        //    Console.WriteLine("Toplam:" + (sayi1 + sayi2));
+        //}
+
+        //static void Toplama(int sayi1, int sayi2)
+        //{
+        //    Console.WriteLine("Toplam:" + (sayi1 + sayi2));
+        //}
+
+        //static void Toplama(int sayi1, int sayi2, int sayi3)
+        //{
+        //    Console.WriteLine("Toplam:" + (sayi1 + sayi2 + sayi3));
+        //}
+
+        //static void Toplama(int sayi1, double sayi2)
+        //{
+        //    Console.WriteLine("Toplam:" + (sayi1 + sayi2));
+        //}
+
+        static void Toplama(double sayi1, int sayi2)
         {
-            Console.WriteLine("1.Sayı:");
-            int sayi1 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine("2.Sayı:");
-            int sayi2 = Convert.ToInt32(Console.ReadLine());
-
-            return sayi1 + sayi2;
-
+            Console.WriteLine("Toplam:" + (sayi1 + sayi2));
         }
+        #endregion
 
+        #region DEFAULT
 
-        static void Indirim2()
+        //static void Toplama(int sayi1, int sayi2 = 15)
+        //{
+        //    Console.WriteLine("Toplama:"+(sayi1+sayi2));
+        //}
+
+        #endregion
+
+        #region PARAMS
+        static void DiziYazdir(int[] sayilar)
         {
-            Console.WriteLine("1.Ürün Fiyatı:");
-            double f1 = Convert.ToDouble(Console.ReadLine());
-            Console.WriteLine("2.Ürün Fiyatı:");
-            double f2 = Convert.ToDouble(Console.ReadLine());
-
-            Console.WriteLine("3.Ürün ister misiniz?(E/H)");
-            string cevap = Console.ReadLine().ToUpper();
-
-            if (cevap == "H")
+            foreach (int item in sayilar)
             {
-                if (f1 > f2)
-                {
-                    f1 = f1 * 0.7;
-                }
-                else
-                {
-                    f2 = f2 * 0.7;
-                }
-                Console.WriteLine("Ödeme:"+(f1+f2));
-            }
-            else
-            {
-                if (f1 > f2)
-                {
-                    f1 = f1 * 0.7;
-                }
-                else
-                {
-                    f2 = f2 * 0.7;
-                }
-
-                double f3 = Indirim3();
-                Console.WriteLine("Ödeme:" + (f1 + f2 + f3));
+                Console.WriteLine(item);
             }
         }
 
-        static double Indirim3()
+        static void DiziYazdir2(params int[] sayilar)
         {
-            Console.WriteLine("3.Ürün Fiyatı:");
-            double f3 = Convert.ToDouble(Console.ReadLine());
-
-            return f3 / 2;
+            foreach (int item in sayilar)
+            {
+                Console.WriteLine(item);
+            }
         }
+
+        static void DiziYazdir3(string ad, params int[] sayilar)
+        {
+            Console.WriteLine(ad);
+
+            foreach (int item in sayilar)
+            {
+                Console.WriteLine(item);
+            }
+        }
+        #endregion
+
+        #region OUT
+
+        //static bool TryPars(string s, out int sayi)
+        //{
+        //    try
+        //    {
+        //        sayi = Convert.ToInt32(s);
+        //        return true;
+        //    }
+        //    catch
+        //    {
+        //        sayi = default;
+        //        return false;
+        //    }
+        //}
 
 
         #endregion
+
+        #region REF
+        static bool TryPars(string s, ref int sayi)
+        {
+            try
+            {
+                sayi = Convert.ToInt32(s);
+
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
         #endregion
     }
 }

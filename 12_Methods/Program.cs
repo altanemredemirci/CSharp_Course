@@ -226,7 +226,9 @@ namespace _12_Methods
             #endregion
 
             #region //klavyeden girilen değerler arasında rastgele sayı üreten  ve bu değerleri 10 elemanlı bir diziye atayan SayiUret() isimli bir metot yazın.
+
             //Bu dizinin elemanlarını yazan DiziYazdır() isimli bir metot daha yazarak elemanları listeleyin.
+            
             //Daha sonra bu dizi içerisinde EnBuyukDeger() adında bir metot ile dizinin en büyük değerini bulan,
             //en küçük değerinin bulan EnKucukDeger() adından başka bir metot daha yazınız.
             //EnBuyukDeger ve EnKucukDeger metotlarında dönen değerleri ekranda gösteren programı yazınız
@@ -234,7 +236,13 @@ namespace _12_Methods
 
             #endregion
 
+            int[] sayilar = new int[10];
+            
+            Dizi.SayiUret(sayilar);
 
+            Dizi.DiziYazdir(sayilar);
+
+            Dizi.EnBuyukEnKucuk(sayilar);
         }
 
         #region*** METOT TANIMLAMA ***
@@ -549,5 +557,7 @@ namespace _12_Methods
         }
 
         #endregion
+
+        
     }
 }

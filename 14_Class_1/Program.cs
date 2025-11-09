@@ -24,7 +24,7 @@
             //long tc3 = 1321312313123;
 
 
-            //List<Ogrenci> ogrenciler = new List<Ogrenci>();
+            List<Ogrenci> ogrenciler = new List<Ogrenci>();
 
 
 

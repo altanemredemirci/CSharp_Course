@@ -6,8 +6,10 @@ using System.Threading.Tasks;
 
 namespace _14_Class_1
 {
+    //Class erişim belirteci tanımlanmaz ise Default olarak internal alır
     internal class Ogrenci
     {
+        //property erişim belirteci tanımlanmaz ise default private alır.
         internal int Numara;
         internal string AdSoyad;
         internal string Bolum;

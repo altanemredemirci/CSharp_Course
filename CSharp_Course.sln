@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Class_2", "14_Class_2\14
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "14_Class_3", "14_Class_3\14_Class_3.csproj", "{F55F7745-4885-4877-94E4-A95E4DE4A51A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "15_Kutuphane_Otomasyonu", "15_Kutuphane_Otomasyonu\15_Kutuphane_Otomasyonu.csproj", "{7AD99C99-A045-4ADF-978C-A3533004F1A2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -105,6 +107,10 @@ Global
 		{F55F7745-4885-4877-94E4-A95E4DE4A51A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F55F7745-4885-4877-94E4-A95E4DE4A51A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F55F7745-4885-4877-94E4-A95E4DE4A51A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AD99C99-A045-4ADF-978C-A3533004F1A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AD99C99-A045-4ADF-978C-A3533004F1A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AD99C99-A045-4ADF-978C-A3533004F1A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AD99C99-A045-4ADF-978C-A3533004F1A2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

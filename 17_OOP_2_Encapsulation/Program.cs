@@ -23,7 +23,7 @@
             vatandas.Ad = "Altan Emre";
             
             //set metot kullanılır.
-            vatandas._TC = "12345678920";
+            vatandas._TC = "12345678920"; //value
 
             //get metot kullanılır
             Console.WriteLine(vatandas._TC);
@@ -38,11 +38,11 @@
 
         public string _TC
         {
-            get
+            get //değeri okumak için kullanılır.
             {
                 return TC;
             }
-            set
+            set//değer atamak için kullanılır.
             {
                 if (value.Length == 11)
                 {

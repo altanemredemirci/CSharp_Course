@@ -12,11 +12,11 @@
              Nesne oluşturulduğu an otomatik çalışır ve tanımlanan işlemi gerçekleştirir.
              */
 
-            //Ogrenci ogrenci = new Ogrenci();
+            Ogrenci ogrenci = new Ogrenci();
             //Ogrenci ogrenci2 = new Ogrenci(1,"Altan","Emre");
 
 
-            Ogrenci ogrenci3 = new Ogrenci();           
+            Ogrenci ogrenci3 = new Ogrenci(1,"Altan","Emre");           
         }
     }
 
@@ -38,12 +38,12 @@
         //    Console.WriteLine("Nesne Oluştu.");
         //}
 
-        //public Ogrenci(int numara, string ad, string soyad)
-        //{
-        //    Numara = numara;
-        //    Ad = ad;
-        //    Soyad = soyad;
-        //}
+        public Ogrenci(int numara, string ad, string soyad)
+        {
+            Numara = numara;
+            Ad = ad;
+            Soyad = soyad;
+        }
 
         //public Ogrenci()
         //{
@@ -61,7 +61,7 @@
             Kayit();
         }
 
-        public void Kayit()
+        public static void Kayit()
         {
             Ogrenci ogrenci = new Ogrenci();
             Console.WriteLine("Numara:");

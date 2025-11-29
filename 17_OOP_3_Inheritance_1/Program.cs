@@ -7,13 +7,18 @@
             //KALITIM-MİRAS ALMA-INHERITANCE
 
             //Ortak özelliklere sahip classların tek bir class üzerinden miras alma yöntemi ile ortak özellikleri yazılmadan çekmesine ve sadece kendisine özel olan özellikleri tanımlanmasına denir.
+            // ** KURAL: Her sınıf tek bir sınıfatan kalıtım alabilir.
+            // ** KURAL: Kalıtım alınan sınıfdaki özelliklerin private harici hepsi aktarılır.
 
             IK ik = new IK();
             ik.Yaz();
+            
 
             IT it = new IT();
             it.Yaz();
             
+
+
         }
     }
 
@@ -25,12 +30,17 @@
       *MUH:Ad,Soyad,TC,DogumTarihi,Maas,HesapSayisi
      */
 
-    class Calisan
+    class Vatandas
     {
         public string Ad { get; set; }
         public string Soyad { get; set; }
         public string TC { get; set; }
         public DateTime DogumTarihi { get; set; }
+    }
+
+    class Calisan:Vatandas
+    {
+        public int Maas { get; set; }
 
         public void Yaz()
         {
@@ -53,4 +63,10 @@
     {
         public int HesapSayisi { get; set; }
     }
+
+    class Musteri:Vatandas
+    {
+        public string FirmaAdi { get; set; }
+    }
+
 }

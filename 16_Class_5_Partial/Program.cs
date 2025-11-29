@@ -11,7 +11,7 @@
              */
 
             Personel personel = new Personel();
-            personel.
+            //personel.
 
         }
     }

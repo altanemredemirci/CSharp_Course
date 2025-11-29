@@ -21,6 +21,13 @@
             this.Id = Id;
             this.Name = Name;
             this.Surname = Surname;
+
+            this.Yaz();
+        }
+
+        public void Yaz()
+        {
+
         }
     }
 }

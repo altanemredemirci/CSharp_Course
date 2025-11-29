@@ -175,7 +175,11 @@
                 {
                     break;
                 }
-
+                else
+                {
+                    Console.WriteLine("Hatalı Tuşlama!");
+                    Thread.Sleep(2000);
+                }
             }
         }
     }

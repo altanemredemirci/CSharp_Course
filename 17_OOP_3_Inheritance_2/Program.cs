@@ -9,14 +9,16 @@
             //ortaokul:No,Ad,Soyad,Veli Telefon,Notlar
             //lise:No,Ad,Soyad,Veli Telefon,YKSPuanı
 
-            Ilkokul ilkokul = new Ilkokul();
-            ilkokul.Ad = "Altan Emre";
-            ilkokul.Soyad = "Demirci";
-            ilkokul.No = 1;
-            ilkokul.VeliTelefonu = "05366295131";
-            ilkokul.OkumaBiliyor = false;
+            Ilkokul ilkokulogrenci = new Ilkokul();
+            ilkokulogrenci.Ad = "Altan Emre";
+            ilkokulogrenci.Soyad = "Demirci";
+            ilkokulogrenci.No = 1;
+            ilkokulogrenci.VeliTelefonu = "05366295131";
+            ilkokulogrenci.OkumaBiliyor = false;
 
-            ilkokul.Yaz();
+            ilkokulogrenci.Yaz();
+            //ilkokulogrenci.Kaydet();
+            Ilkokul.Kaydet();
 
         }
     }
@@ -38,12 +40,16 @@
 
         public static void Kaydet()
         {
-
+            Ogrenci ogrenci = new Ogrenci();
             Console.WriteLine("Öğrenci No:");
-            No = Convert.ToInt32(Console.ReadLine());
+            ogrenci.No = Convert.ToInt32(Console.ReadLine());
             Console.WriteLine("Öğrenci Adı:");
+            ogrenci.Ad = Console.ReadLine();
             Console.WriteLine("Öğrenci Soyadı:");
+            ogrenci.Soyad = Console.ReadLine();
             Console.WriteLine("Öğrenci Veli Telefon Numarası:");
+            ogrenci.VeliTelefonu = Console.ReadLine();
+
         }
     }
 

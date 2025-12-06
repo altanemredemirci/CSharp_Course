@@ -15,8 +15,6 @@
            PAZ:Ad,Soyad,TC,SGKGirisTarihi,TeklifSayisi
 
            PersonelEkle(),PersonelListele(),PersonelSil(),PersonelGuncelle()
-
-
            */
         }
     }

@@ -12,16 +12,17 @@
             User     => Create(),Update(),Delete(),List(),Find(int id),List(filter)
             Cart     => Create(),Update(),Delete(),List(),Find(int id),List(filter)
             Order    => Create(),Update(),Delete(),List(),Find(int id),List(filter)
-
-             */
+            */
 
             Product product = new Product();
-            product.Create();
+            product.Create();            
         }
     }
 
     abstract class Base
     {
+        public int Barcode { get; set; }
+
         public abstract void Create();
         public abstract void Update();
         public abstract void Delete();

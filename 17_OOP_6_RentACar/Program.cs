@@ -56,6 +56,21 @@
 
 
              */
+
+            Araba araba = new Araba("Renault","Megane",2013,"34YN297",500,5,"Otomatik");
+            ElektrikliAraba elektrikliAraba = new ElektrikliAraba("Tesla","Y",2025,"34TK1152",1000,5,"Otomatik");
+            Motorsiklet motorsiklet = new Motorsiklet("Honda","R1000",2020,"34TE2447",400,1000,true);
+
+            Console.WriteLine(araba.KiraUcretiHesapla(7));
+            Console.WriteLine(elektrikliAraba.KiraUcretiHesapla(7));
+            Console.WriteLine(motorsiklet.KiraUcretiHesapla(7));
+
+            List<Arac> araclar = new List<Arac>()
+            {
+                araba,elektrikliAraba,motorsiklet
+            };
+
         }
     }
+
 }

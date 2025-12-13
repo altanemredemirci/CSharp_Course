@@ -1,4 +1,5 @@
-﻿namespace _17_OOP_5_Interface_3
+﻿
+namespace _17_OOP_5_Interface_3
 {
     internal class Program
     {
@@ -51,5 +52,5 @@
         public string Departman { get; set; }
         public int ToplamCalismaSaati { get; set; }
         public int PersonelSayisi { get; set; }
-    }
+    }    
 }
